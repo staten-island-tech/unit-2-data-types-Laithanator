@@ -1,1 +1,5 @@
-print("hi")
+subtotal = float(input("Please input subtotal: "))
+tipPercent = float(input("Please input tip percentage as a decimal: "))
+tip = int(subtotal * tipPercent)
+total = float(subtotal + tip)
+print("Subtotal:",(subtotal),"Tip:",(tip),"Total:",(total))
