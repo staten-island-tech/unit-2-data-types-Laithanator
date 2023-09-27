@@ -1,9 +1,5 @@
-bill = input("Please input bill amount: ")
-bill = float(bill)
-tipPercent = input("Please input tip percentage (only use numbers, no percent symbol): ")
-tipMult = tipPercent * 0.01
-tipMult = float(tipMult)
-tip = bill * tipMult
-tip = int(tip)
-total = tip + bill
-print("Bill:",(bill),"Tip:",(tip),"Total:",(total))
+subtotal = float(input("Please input subtotal: "))
+tipPercent = float(input("Please input tip percentage as a decimal: "))
+tip = int(subtotal * tipPercent)
+total = float(subtotal + tip)
+print("Subtotal:",(subtotal),"Tip:",(tip),"Total:",(total))
